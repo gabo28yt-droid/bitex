@@ -18,7 +18,7 @@ const RastreoRepartidor = lazy(() => import('./pages/RastreoRepartidor'));
 
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <Suspense fallback={<div style={{ padding: '40px', textAlign: 'center' }}>Cargando BiteX...</div>}>
       <Routes>
         {/* Rutas publicas */}

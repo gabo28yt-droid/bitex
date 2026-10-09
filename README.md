@@ -36,3 +36,7 @@ firebase deploy --only hosting
 ```
 
 Firebase Hosting is configured to serve `dist/` and rewrite app routes to `index.html` for React Router.
+
+## GitHub Pages
+
+GitHub Pages is deployed by `.github/workflows/deploy-pages.yml` after changes reach `main`. The workflow builds the Vite app for `/bitex/` and publishes `dist/`; React routes also work when opened directly or refreshed.
