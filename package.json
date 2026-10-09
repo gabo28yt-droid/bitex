@@ -1,8 +1,11 @@
 {
-  "name": "nueva_carpeta",
+  "name": "bitex",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": ">=20.19.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -30,5 +33,8 @@
     "postcss": "^8.5.12",
     "tailwindcss": "^4.2.4",
     "vite": "^8.0.10"
+  },
+  "overrides": {
+    "@grpc/grpc-js": "^1.14.6"
   }
 }
